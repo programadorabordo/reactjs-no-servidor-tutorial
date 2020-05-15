@@ -1,0 +1,31 @@
+{
+  "name": "react-servidor",
+  "version": "1.0.0",
+  "description": "React no Servidor",
+  "main": "index.js",
+  "scripts": {
+    "webpack:server": "webpack --config webpack.server.js --watch",
+    "webpack:client": "webpack --config webpack.config.js --watch",
+    "serve": "nodemon ./dist/bundle_server.js",
+    "start": "npm-run-all --parallel serve webpack:*"
+  },
+  "author": "Ayrton Teshima, Programador a Bordo",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
